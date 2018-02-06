@@ -1,0 +1,420 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/*
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+/* full screen */
+
+#banner {
+  background: url("../../images/banner.jpg") center center;
+  background-size: cover;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#banner .inner {
+  position: relative;
+  background: rgba(103, 144, 229, 0.95);
+  color: #fff;
+  display: inline-block;
+  opacity: 0.95;
+  padding: 20px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#banner .inner header {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#banner .inner header h2 {
+  border-bottom: solid 2px;
+  font-size: 5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center
+}
+
+#banner .inner p {
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  line-height: 30px;
+}
+
+#banner .inner p a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: left;
+}
+
+#banner .inner footer {
+  margin: 2em 0 0 0;
+}
+
+/* Icon */
+
+.icon {
+  position: relative;
+  text-align: center;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon.circle {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 1.25em;
+  height: 2.25em;
+  left: 0;
+  line-height: 2.25em;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 2.25em;
+}
+
+.icon.circle:hover {
+  top: -0.2em;
+}
+
+.icon.circle.fa-instagram {
+  background: #70aecd;
+  color: #fff;
+}
+
+.icon.circle.fa-instagram:hover {
+  background: #7fb7d2;
+}
+
+.icon.circle.fa-facebook {
+  background: #7490c3;
+  color: #fff;
+}
+
+.icon.circle.fa-facebook:hover {
+  background: #829bc9;
+}
+
+.icon.circle.fa-pinterest {
+  background: #db6b67;
+  color: #fff;
+}
+
+.icon.circle.fa-pinterest:hover {
+  background: #df7b77;
+}
+
+.icon.featured {
+  cursor: default;
+  display: block;
+  margin: 0 0 1.5em 0;
+  opacity: 0.35;
+  text-align: center;
+}
+
+.icon.featured:before {
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.icon>.label {
+  display: none;
+}
+
+/* List */
+
+ol.default {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+ol.default li {
+  padding-left: 0.25em;
+}
+
+ul.default {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+ul.default li {
+  padding-left: 0.5em;
+}
+
+ul.icons {
+  cursor: default;
+  text-align: center;
+}
+
+ul.icons li {
+  display: inline-block;
+  line-height: 1em;
+  padding-left: 0.5em;
+  padding-top: 40px;
+}
+
+ul.icons li:first-child {
+  padding-left: 0;
+}
+
+ul.featured-icons {
+  cursor: default;
+  margin: -0.75em 0 0 0;
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+ul.featured-icons li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+ul.featured-icons li .icon {
+  display: inline-block;
+  font-size: 6.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  width: 1em;
+}
+
+ul.buttons {
+  cursor: default;
+}
+
+ul.buttons:last-child {
+  margin-bottom: 0;
+}
+
+ul.buttons li {
+  display: inline-block;
+  padding: 0 0 0 1.5em;
+}
+
+ul.buttons li:first-child {
+  padding: 0;
+}
+
+ul.buttons.vertical li {
+  display: block;
+  padding: 1.5em 0 0 0;
+}
+
+ul.buttons.vertical li:first-child {
+  padding: 0;
+}
+
+/* form */
+
+#mc_embed_signup {
+  text-align: center;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  font-family: "Roboto";
+  padding: 20px 20px;
+}
+
+#mc_embed_signup h2 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+#mc_embed_signup input {
+  border: medium none;
+  font-size: 14px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+  padding: 4px 5px;
+}
+
+#mc_embed_signup input.email {
+  width: 71%;
+  margin-bottom: 20px;
+}
+
+#mc_embed_signup input.name {
+  background: #fff;
+  margin-right: 2px;
+}
+
+#mc_embed_signup input[type="submit"] {
+  background: #0D5CBD;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  width: 134px;
+  font-size: 12px;
+}
+
+.mc-field-group {
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.inputContainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.inputs {
+  width: 55%;
+}
+
+.thanks h1{
+  font-size: 28px;
+  font-family: 'Roboto';
+}
+
+/* media query */
+
+@media screen and (max-width: 640px) {
+  #banner {
+    overflow: scroll;
+
+  }
+  #banner .inner{
+    margin-top: 130px;
+  }
+
+  .name {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nomInput inputs {
+    flex-wrap: wrap;
+    height: 15px;
+  }
+  .inputContainer {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .inputs {
+    width: 60%;
+    text-align: center;
+  }
+  .clear{
+    margin-top: 20px;
+  }
+  #mc_embed_signup {
+    width: 60%;
+    margin: 0 auto;
+
+  }
+  @media screen and (min-width: 240px) {
+    #mc_embed_signup input.email {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 4px;
+    }
+    #mc_embed_signup {
+      width: 250px;
+    }
+    .inputContainer input {
+      height: 15px;
+      width: 200px;
+    }
+    .mc-field-group {
+      height: 15px;
+      width: 200px;
+    }
+  }
+  @media screen and (min-width: 780px){
+    #banner {
+      overflow: scroll;
+    }
+    #banner .inner{
+      margin-top: 40px;
+    }
+  }
